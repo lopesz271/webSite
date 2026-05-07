@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Meie+Script&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pääruoka</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <button>Comprar</button>
+            <button>Assinatura</button>
+            <button>Sobre Nós</button>
+        </div>
+        <h2 class="title reveal">Pääruoka</h2>
+    </header>
+<div class="container">
+    <div class="info reveal"><p>O Lihapullat é um dos pratos mais tradicionais e queridos da culinária da Finlândia, representando bem o estilo simples, reconfortante e saboroso da gastronomia nórdica. Trata-se de almôndegas feitas principalmente com carne moída (geralmente uma mistura de carne bovina e suína), temperadas com ingredientes básicos como sal, pimenta, cebola e, muitas vezes, um toque de noz-moscada ou pimenta-da-jamaica, que dão um sabor levemente aromático e característico.
+
+A textura das lihapullat é macia e suculenta, resultado da adição de leite ou creme de leite à mistura, além de farinha de rosca ou pão embebido, o que ajuda a manter a umidade durante o cozimento. Elas são moldadas em pequenas bolas e geralmente fritas na manteiga ou óleo até ficarem douradas por fora, criando uma leve crocância que contrasta com o interior macio.
+</p></div>
+
+    <div class="imgP reveal">  
+    <img class="photo" src="images/PratoTipico.png" alt="Prato TIpico"></div>
+    
+    <div class="info reveal"><p>Culturalmente, o lihapullat é um prato associado ao cotidiano familiar e ao conforto caseiro. Ele aparece frequentemente em almoços escolares, refeições em casa e até em buffets tradicionais. Apesar de sua simplicidade, carrega um forte valor afetivo, sendo muitas vezes preparado a partir de receitas passadas de geração em geração.
+
+Embora existam pratos semelhantes em outros países, como as almôndegas suecas, as lihapullat têm sua própria identidade, com temperos mais discretos e um foco maior nos sabores naturais dos ingredientes. Esse prato reflete bem o estilo de vida finlandês: prático, acolhedor e profundamente conectado às tradições.</p></div>
+
+
+<div class="card reveal">
+    <div class="exp">
+        <span class="text reveal">Um livro de culinária é muito mais do que uma simples coletânea de receitas — ele é um convite para explorar culturas, sabores e histórias através da comida. Em suas páginas, encontramos uma combinação cuidadosamente organizada de pratos que vão desde preparações básicas até criações mais elaboradas, pensadas tanto para iniciantes quanto para cozinheiros experientes. Cada receita costuma vir acompanhada de instruções detalhadas, listas de ingredientes bem estruturadas e dicas práticas que ajudam a garantir bons resultados, mesmo para quem está começando na cozinha.
+        </span>
+        <div class="bk">
+        <img class="book" src="images/jerusalem.webp" alt="Foto Livro de Culianaria">
+    </div>
+</div>
+</div>
+
+    <div class="reviews reveal">
+  <div class="reviews-track">
+    
+    <div class="review">
+      ⭐⭐⭐⭐⭐
+      <p>"Melhor comida que já provei!"</p>
+      <span>- João</span>
+    </div>
+
+    <div class="review">
+      ⭐⭐⭐⭐⭐
+      <p>"Entrega rápida e sabor incrível."</p>
+      <span>- Maria</span>
+    </div>
+
+    <div class="review">
+      ⭐⭐⭐⭐⭐
+      <p>"Comeria todo dia fácil 😋"</p>
+      <span>- Carlos</span>
+    </div>
+
+    
+    <div class="review">
+      ⭐⭐⭐⭐⭐
+      <p>"Melhor comida que já provei!"</p>
+      <span>- João</span>
+    </div>
+
+    <div class="review">
+      ⭐⭐⭐⭐⭐
+      <p>"Entrega rápida e sabor incrível."</p>
+      <span>- Maria</span>
+    </div>
+
+    <div class="review">
+      ⭐⭐⭐⭐⭐
+      <p>"Comeria todo dia fácil 😋"</p>
+      <span>- Carlos</span>
+    </div>
+
+  </div>
+</div>
+</div>
+<script>
+const reveals = document.querySelectorAll('.reveal');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        }
+    });
+});
+
+reveals.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
